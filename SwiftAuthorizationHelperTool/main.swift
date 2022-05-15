@@ -27,7 +27,7 @@ if CommandLine.arguments.count > 1 {
     }
 } else if getppid() == 1 { // Otherwise if started by launchd, start up XPC server
     NSLog("parent is launchd, starting up XPC server")
-    
+    WorkspaceEvents.registerFrontAppChangeNote()
     let server = try XPCServer.forThisBlessedHelperTool()
     server.registerRoute(SharedConstants.allowedCommandRoute, handler: AllowedCommandRunner.run(message:))
     server.registerRoute(SharedConstants.uninstallRoute, handler: Uninstaller.uninstallFromXPC)

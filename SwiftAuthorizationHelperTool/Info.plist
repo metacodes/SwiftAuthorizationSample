@@ -2,9 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildHash</key>
+	<string>17f32687368b81036c2c5d3bf5dbc34cb03c53fbb0f12587498ba0762d253724</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>XPC!</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.0.14</string>
+	<key>XPCService</key>
+	<dict>
+		<key>EnvironmentVariables</key>
+		<dict/>
+		<key>JoinExistingSession</key>
+		<false/>
+		<key>RunLoopType</key>
+		<string>NSRunLoop</string>
+		<key>ServiceType</key>
+		<string>Application</string>
+	</dict>
 </dict>
 </plist>
